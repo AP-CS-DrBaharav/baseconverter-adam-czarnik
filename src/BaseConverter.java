@@ -18,10 +18,8 @@ public class BaseConverter {
         return str;
     }
 
-
     
-    public static String Dec2Bin(int num) {
-       
+    public static String Dec2Bin(int num) {   
         String str = "";
 
         while ( num>0 )
@@ -30,25 +28,9 @@ public class BaseConverter {
             str = digit + str ;
             num         = num / 2;
         }
-
         return str;
     }
     
-    
-    public static String Dec2Bin2(int num) {
-       
-        String str = "";
-
-        int baseValue = 2;
-        
-        while ( num>0 )
-        {
-            str = num % baseValue + str ;
-            num = num / baseValue;
-        }
-        
-        return str;
-    }
 
     public static int Bin2Dec(String str) {
         int l = 0;
@@ -57,9 +39,7 @@ public class BaseConverter {
             newNum = 2*newNum + (str.charAt(l)-'0');
             l++;
         }
-        
         return newNum;   
-    
     }
     
     
@@ -82,8 +62,6 @@ public class BaseConverter {
             str =  digitStr + str ;
 
         }
-        
-        
         return str;
     }
     
@@ -100,20 +78,9 @@ public class BaseConverter {
     */
 
     public static int Hex2Dec(String str) {
-        int num = 0;
-        
-        for (int i=0; i<str.length() ; ++i)
-        {
-            char c = str.charAt(i) ;
-            int digit = 0;
-            if ( c>='A'  && c<='F')
-                digit = c-'A'+ 10;
-            else
-                digit = c-'0';
-            num = 16*num + digit;
-        }
-        
-        return num;                
+
+        // TODO
+        return 0;                
     }
     
     
@@ -123,18 +90,10 @@ public class BaseConverter {
     * @return   the value in Octal as a string 24
     */
     public static String Dec2Oct(int num) {
-        String str="";
-        int baseValue = 8;
-        
-        while ( num>0 )
-        {
-            int digit = num % baseValue ;
-            num = num / baseValue;
-            str =  digit + str ;
 
-        }
+        // TODO
         
-        return str;                
+        return "";                
     }
 
     /**
@@ -142,18 +101,20 @@ public class BaseConverter {
     * @return   the value in Decimal, for example 24
     */
     public static int Oct2Dec(String str) {
-        int num = 0;
-        
-        for (int i=0; i<str.length() ; ++i)
-            num = 8*num + (str.charAt(i)-'0');
-        
-        return num;                
+        // TODO
+
+        return 0;                
     }
 
     
+    /**
+    * @param str input string describing a Hex number. 
+    * @return   string representing the number as Binary string.
+    */
     public static String Hex2Bin(String str) {
+        // TODO
         
-        return Dec2Bin(Hex2Dec(str));                
+        return "";                
     }
 
 } 
