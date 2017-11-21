@@ -32,7 +32,7 @@ public class Main {
 
         // Homework from here on.
         System.out.println("---\nHomework from here on\n----");
-        System.out.println("0x" + str + " as a Dec: " + BaseConverter.Hex2Dec(str));
+        System.out.println("0x" + str + " as a Decimal: " + BaseConverter.Hex2Dec(str));
         System.out.println("--ANSWER--");
         System.out.println("0x10100111 as a Dec: 167");
         System.out.println("\n\n");
